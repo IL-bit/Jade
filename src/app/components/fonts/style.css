@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gloria script';
+    src: local('Gloria script'),
+        url('gloriascript-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: local('Proxima Nova Black Italic'),
+        url('proximanova-blackit.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: local('ProximaNova-Light'),
+        url('proximanova-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: local('Proxima Nova Bold'),
+        url('proximanova-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: local('Proxima Nova Regular'),
+        url('proximanova-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
