@@ -1,0 +1,88 @@
+@import url(../fonts/style.css);
+
+#footer {
+    height: 548px;
+    position: relative;
+    overflow: hidden;
+    .feedback {
+        width: 237px;
+        height: 78px;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+            font-family: 'Proxima Nova Rg';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 31.6px;
+            color: #000;
+        }
+        p {
+            font-family: 'Proxima Nova Lt';
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 20px;
+            color: rgb(0, 0, 0, 0.5);
+            margin-top: 6px;
+        }
+    }
+    .email {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 36px;
+        left: 15px;
+    }
+    button {
+        width: 211px;
+        height: 43px;
+        border: none;
+        border-radius: 100px;
+        background-color: #3A8DDE;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: #fff;
+        position: absolute;
+        top: 158px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bf {
+        width: 55px;
+        height: 60px;
+        position: absolute;
+        top: 244px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    ul {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        padding: 0;
+        li {
+            font-family: 'Proxima Nova Rg';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #CCCCCC;
+            margin-top: 12px;
+            a {
+                font-family: 'Proxima Nova Rg';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #CCCCCC;
+            }
+        }
+    }
+}

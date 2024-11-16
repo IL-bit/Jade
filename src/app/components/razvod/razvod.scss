@@ -7,38 +7,43 @@
     background-position: center;
     height: 100vh;
     .slogan {
-        width: 281.69px;
-        height: 231.84px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 20px;
-        h1, h2, h3 {
-            font-family: 'Gloria script';
-            font-weight: 400;
-            color: #fff;
-            position: absolute;
-        }
-        h1 {
-            font-size: 142px;
-            line-height: 100%;
-            top: 0;
-            left: 0;
-        }
-        h2 {
-            font-size: 114px;
-            line-height: 100%;
-            bottom: 0;
-            right: 42px;
-            left: auto;
-            top: auto;
-        }
-        h3 {
-            font-size: 64px;
-            line-height: 108%;
-            right: 0;
-            left: auto;
-            top: 96px;
+        .slogan {
+            width: 281.69px;
+            height: 231.84px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 20px;
+            h1, h2, h3 {
+                font-family: 'Gloria script';
+                font-weight: 400;
+                color: #fff;
+                position: absolute;
+            }
+            h1 {
+                font-size: 142px;
+                line-height: 100%;
+                top: 0;
+                left: 0;
+                text-shadow: 1.59px 2.38px 0px #0d85c9;
+            }
+            h2 {
+                font-size: 114px;
+                line-height: 100%;
+                bottom: 0;
+                right: 42px;
+                left: auto;
+                top: auto;
+                text-shadow: 1.6px 2.41px 0px #0d85c9;
+            }
+            h3 {
+                font-size: 64px;
+                line-height: 108%;
+                right: 0;
+                left: auto;
+                top: 96px;
+                text-shadow: 1.39px 1.85px 0px #0d85c9;
+            }
         }
     }
     .tg {
