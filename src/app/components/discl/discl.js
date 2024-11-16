@@ -1,15 +1,20 @@
 import './discl.scss';
-
+import { useNavigate } from 'react-router-dom';
 const Discl = () => {    
+    const navigate = useNavigate();
+
+    const handleClick = (route) => {
+      navigate(route);
+    };
     return (
-        <div className="container-fluid" id="discl">
-            <div className="row">
+        <div className="container-fluid">
+            <div className="row" id="discl">
                 <div className="col-sm-12">
-                    <h2>Доступ на веб-сайт разрешен<br/>только гражданам РФ старше 18 лет,<br/>являющимся потребителями табака.</h2>
-                    <p>Я подтверждаю, что мне есть 18 лет<br/>и я являюсь потребителем табака.</p>
+                    <h2>Доступ на веб-сайт разрешен только гражданам РФ старше 18 лет, являющимся потребителями табака.</h2>
+                    <p>Я подтверждаю, что мне есть 18 лет и я являюсь потребителем табака.</p>
                     <div className="buttons">
-                        <button>нет</button>
-                        <button>да</button>
+                        <button onClick={() => handleClick('/')}>нет</button>
+                        <button onClick={() => handleClick('/main')}>да</button>
                     </div>
                 </div>
             </div>

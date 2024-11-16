@@ -1,8 +1,14 @@
 import './footer.scss';
+import { useNavigate } from 'react-router-dom';
 import emailSvg from '../img/footer_email.svg';
 import bfSvg from '../img/footer_bf.svg';
 
 const Footer = () => {
+    const navigate = useNavigate();
+
+    const handleClick = (route) => {
+      navigate(route);
+    };
     return (
         <div className="row" id="footer">
             <div className="col-sm-12">
@@ -11,7 +17,7 @@ const Footer = () => {
                     <p>Вопросы, предложения,<br/>дополнительная информация.</p>
                 </div>
                 <img src={emailSvg} alt="#" className="email"/>                
-                <button>обратная связь</button>
+                <button onClick={() => handleClick('/feedback')}>обратная связь</button>
                 <img src={bfSvg} alt="#" className="bf"/>
                 <ul>
                     <li>© 2024 Сайт «Jadé»</li>

@@ -1,8 +1,17 @@
 import './product.scss';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Product = () => {
+    const navigate = useNavigate();
+    const handleClick = (route) => {
+        navigate(route);
+    };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return(
         <div className="container-fluid">
             <Header />
@@ -25,7 +34,7 @@ const Product = () => {
                         <h2>la bleue</h2>
                         <p>Французский стиль</p>
                     </div>
-                    <button>узнать jadé ближе</button>
+                    <button onClick={() => handleClick('/about')}>узнать jadé ближе</button>
                 </div>
             </div>
             <Footer />

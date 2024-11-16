@@ -1,10 +1,20 @@
 import './main.scss';
+import { useNavigate } from 'react-router-dom';
 import downPng from '../img/main_down.png';
 import sigSvg from '../img/main_sigars.svg';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 
 const Main = () => {
+    const navigate = useNavigate();
+
+    const handleMoreClick = () => {
+        window.scrollTo({ top: window.scrollY + 80 * window.innerHeight / 100, behavior: 'smooth' });
+    };
+    
+    const handleClick = (route) => {
+        navigate(route);
+    };
     return(
         <div className="container-fluid">
             <Header />
@@ -17,7 +27,7 @@ const Main = () => {
                             <h2>призы</h2>
                         </div>
                         <button className="begin">начать</button>
-                        <button className="down"><img src={downPng} alt="#" /></button>
+                        <button className="down" onClick={handleMoreClick}><img src={downPng} alt="#" /></button>
                     </section>
                     <section id="second">
                         <div className="txt">
@@ -26,7 +36,7 @@ const Main = () => {
                             <p>Открой для себя новые вкусы</p>
                         </div>
                         <img src={sigSvg} alt="#" />
-                        <button>перейти</button>
+                        <button onClick={() => handleClick('/product')}>перейти</button>
                     </section>
                 </div>
             </div>

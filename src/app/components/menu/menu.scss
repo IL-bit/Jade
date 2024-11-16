@@ -1,13 +1,10 @@
 #menu {
     width: 100vw;
     height: calc(100vh - 56px);
-    margin-top: 56px;
     background: url(../img/menu_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: fixed;
-    z-index: 999;
     .menu {
         width: 330px;
         height: 456px;
@@ -120,4 +117,10 @@
             transform: translateX(-50%);
         }
     }
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
 }

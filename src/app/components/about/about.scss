@@ -1,0 +1,64 @@
+@import url(../fonts/style.css);
+
+#about {
+    height: 2040px;
+    background: url(../img/about_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h3 {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 25.22px;
+        line-height: 26.6px;
+        color: #9A6592;
+        text-align: center;
+        margin-top: 304px;
+    }
+    h1 {
+        font-family: 'Gloria script';
+        font-weight: 400;
+        font-size: 83px;
+        line-height: 70%;
+        color: #3A8DDE;
+        text-align: center;
+        margin-top: 93px;
+    }
+    .first {
+        width: 333px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: #000;
+        margin-top: 575px;
+        margin-bottom: 57px;
+    }
+    .img {
+        width: 100vw;
+        height: 213px;
+        background: url(../img/about_img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0 -12px 0 -12px;
+    }
+    h2 {
+        font-family: 'Gloria script';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 102%;
+        color: #3A8DDE;
+        text-align: left;
+        margin-top: 12px;
+    }
+    .second {
+        width: 318px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        color: #000;
+        margin-top: 15px;
+    }
+}
