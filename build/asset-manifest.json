@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.29036899.css",
+    "main.js": "/static/js/main.45ae4e09.js",
+    "static/media/main_sigars.svg": "/static/media/main_sigars.b6295ce4dcfb1d7821027f94cdcff9fc.svg",
+    "static/media/product_bg.png": "/static/media/product_bg.4f5fc5588f69d2f76474.png",
+    "static/media/news_bg.png": "/static/media/news_bg.eb1a7f0217a1ad5e1457.png",
+    "static/media/discl_bg.png": "/static/media/discl_bg.920b3c6382b11cbd206f.png",
+    "static/media/main_bg.png": "/static/media/main_bg.eb6ddf5a294a658f7f96.png",
+    "static/media/razvod_bg.png": "/static/media/razvod_bg.a909e5929bd0336a3a08.png",
+    "static/media/menu_bg.png": "/static/media/menu_bg.254a37ec093f0f077fe7.png",
+    "static/media/HurmeGeometricSans3-Regular.ttf": "/static/media/HurmeGeometricSans3-Regular.5dbde76f383490a41982.ttf",
+    "static/media/proximanova-regular.ttf": "/static/media/proximanova-regular.8181ca4b7c2d1189d78a.ttf",
+    "static/media/about_bg.png": "/static/media/about_bg.9d495e72cf20ade5de52.png",
+    "static/media/proximanova-bold.otf": "/static/media/proximanova-bold.fcaab2524c5baabd71f6.otf",
+    "static/media/proximanova-blackit.otf": "/static/media/proximanova-blackit.e97eccb6c0e64a5a0141.otf",
+    "static/media/gloriascript-regular.ttf": "/static/media/gloriascript-regular.ecab47d5d66b8d4a9ce7.ttf",
+    "static/media/proximanova-light.otf": "/static/media/proximanova-light.9d69a5449e101ad71e3d.otf",
+    "static/media/about_img.png": "/static/media/about_img.9623ed0e7516d2e2212c.png",
+    "static/media/razvod_button.png": "/static/media/razvod_button.5f2cb8ad4cadf69c2565.png",
+    "static/media/footer_bf.svg": "/static/media/footer_bf.88bb85d791b59f3154e6c61dc90611d7.svg",
+    "static/media/logo.svg": "/static/media/logo.c3cfe5c4871627910769bac0a9c3466e.svg",
+    "static/media/menu_game.svg": "/static/media/menu_game.93a27fc820ce05e76dc116c835658bf1.svg",
+    "static/media/menu_product.svg": "/static/media/menu_product.14f848d7fe7817edb676aa9eeb2b153a.svg",
+    "static/media/menu_about.svg": "/static/media/menu_about.f73c64f85f0385b802bc9ae06023208a.svg",
+    "static/media/menu_journal.svg": "/static/media/menu_journal.2226a16397b5a809bb09068b1b17243b.svg",
+    "static/media/feedback_email.svg": "/static/media/feedback_email.75aa05419aa8f6eba683f7c716452b5e.svg",
+    "static/media/footer_email.svg": "/static/media/footer_email.435d41f0d8d503ff11449fb6edc30c2b.svg",
+    "static/media/feedback_text.svg": "/static/media/feedback_text.09d0c1eb0e7e5f86f23e9b22f4a45f32.svg",
+    "static/media/feedback_user.svg": "/static/media/feedback_user.3fe7a4a3184c8092fcb2e8c7bec2aad9.svg",
+    "index.html": "/index.html",
+    "static/media/go.svg": "/static/media/go.60cdfc38a68cac38e4a1e8d42e3376dd.svg",
+    "static/media/news_next.svg": "/static/media/news_next.47d903a5dcc595733511541dcd2981c7.svg",
+    "static/media/news_back.svg": "/static/media/news_back.2ce93a0f0118ba0628582acf0822cb51.svg",
+    "main.29036899.css.map": "/static/css/main.29036899.css.map",
+    "main.45ae4e09.js.map": "/static/js/main.45ae4e09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29036899.css",
+    "static/js/main.45ae4e09.js"
+  ]
+}
