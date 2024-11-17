@@ -21,11 +21,11 @@ const Footer = () => {
                 <img src={bfSvg} alt="#" className="bf"/>
                 <ul>
                     <li>© 2024 Сайт «Jadé»</li>
-                    <li><a href="#">Правила использования сайта</a></li>
-                    <li><a href="#">Политика в отношении обработки<br/>персональных данных</a></li>
-                    <li><a href="#">Положение о конфидециальности</a></li>
-                    <li><a href="#">Риски, связанные со здоровьем</a></li>
-                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="https://disk.deluxe-interactive.com/s/YjZkMesnSQtNQBZ?path=%2FJade">Правила использования сайта</a></li>
+                    <li><a href="https://disk.deluxe-interactive.com/s/YjZkMesnSQtNQBZ?path=%2FJade">Политика в отношении обработки<br/>персональных данных</a></li>
+                    <li><a href="https://disk.deluxe-interactive.com/s/YjZkMesnSQtNQBZ?path=%2FJade">Положение о конфидециальности</a></li>
+                    <li><a href="https://disk.deluxe-interactive.com/s/YjZkMesnSQtNQBZ?path=%2FJade">Риски, связанные со здоровьем</a></li>
+                    <li><a href="https://disk.deluxe-interactive.com/s/YjZkMesnSQtNQBZ?path=%2FJade">Вопросы и ответы</a></li>
                 </ul>
             </div>
         </div> 

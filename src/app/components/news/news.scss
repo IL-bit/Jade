@@ -132,6 +132,8 @@
         height: 40px;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 3;
         button {
             width: 40px;
             height: 40px;
@@ -156,5 +158,10 @@
             background: #3A8DDE;
             color: #fff;
         }
+    }
+    h1 {
+        position: relative;
+        z-index: 3;
+        text-align: center;
     }
 }

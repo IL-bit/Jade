@@ -18,7 +18,7 @@ const Menu = () => {
       dispatch(togglePopup());
     };
     const gameClick = () => {
-        window.location.href = 'https://example.com';
+        window.location.href = 'http://t.me/JadeSmoke_bot/JadeGame';
     }
     return(
         <div className={`row ${isOpen ? 'show' : 'hide'}`} id="menu">

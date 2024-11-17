@@ -15,6 +15,9 @@ const Main = () => {
     const handleClick = (route) => {
         navigate(route);
     };
+    const gameClick = () => {
+        window.location.href = 'http://t.me/JadeSmoke_bot/JadeGame';
+    }
     return(
         <div className="container-fluid">
             <Header />
@@ -26,7 +29,7 @@ const Main = () => {
                             <h3>выигрывай</h3>
                             <h2>призы</h2>
                         </div>
-                        <button className="begin">начать</button>
+                        <button className="begin" onClick={() => gameClick()}>начать</button>
                         <button className="down" onClick={handleMoreClick}><img src={downPng} alt="#" /></button>
                     </section>
                     <section id="second">

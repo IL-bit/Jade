@@ -1,69 +1,100 @@
-import React, { useEffect, useRef, useState } from 'react';
 import './feedback.scss';
 import userSvg from '../img/feedback_user.svg';
 import emaliSvg from '../img/feedback_email.svg';
 import textSvg from '../img/feedback_text.svg';
 import Header from '../header/header';
+import { useDispatch, useSelector } from 'react-redux';
+import { SENDFORM } from '../../../middleware.js';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Feedback = () => {
     const textareaRef = useRef(null);
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const dispatch = useDispatch();
+    const state = useSelector((state) => state);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const Form = state.form;
     const maxRows = 4; 
     const handleInput = () => {
         const textarea = textareaRef.current;
-        textarea.style.height = 'auto'; 
-        const lineHeight = parseInt(getComputedStyle(textarea).lineHeight);
-        const maxHeight = lineHeight * maxRows; 
-        textarea.style.height = `${Math.min(textarea.scrollHeight, maxHeight)}px`;
-    };
+        if (textarea) {
+          textarea.style.height = 'auto';
+          const lineHeight = parseInt(getComputedStyle(textarea).lineHeight);
+          const maxHeight = lineHeight * maxRows;
+          textarea.style.height = `${Math.min(textarea.scrollHeight, maxHeight)}px`;
+        }
+      };
     useEffect(() => {
         handleInput();
     }, []);
-    const isFormValid = name && email && message;
+    const isFormValid = formData.name && formData.email && formData.message;
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+        dispatch({ type: "RESETFORM" });
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
+    };
+    const handleExit = () => {
+        dispatch({ type: "RESETFORM" }); 
+    };
 
     return(
         <div className="container-fluid">
             <Header />
             <div className="row" id="feedback">
-                <div className="col-sm-12">
-                    <h2>Обратная связь</h2>
-                    <p>Вы можете поделиться с нами<br/>предложениями и пожеланиями</p>
-                    <form action="#">
-                        <div className="name">
-                            <img src={userSvg} alt="#" style={{ opacity: name ? 1 : 0.4 }}/>
-                            <input 
-                                type="text" 
-                                placeholder="Имя" 
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                        </div>
-                        <div className="email">
-                            <img src={emaliSvg} alt="#" style={{ opacity: email ? 1 : 0.4 }}/>
-                            <input 
-                                type="email" 
-                                placeholder="Электронная почта" 
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                        </div>
-                        <div className="text">
-                            <img src={textSvg} alt="#" style={{ opacity: message ? 1 : 0.4 }}/>
-                            <textarea
-                                ref={textareaRef}
-                                onInput={(e) => {
-                                    setMessage(e.target.value);
-                                    handleInput();
-                                }}
-                                placeholder="Ваш текст"
-                            />
-                        </div>
-                        <button style={{ opacity: isFormValid ? 1 : 0.4 }} disabled={!isFormValid}>
-                            отправить
-                        </button>
-                    </form>
+                <div className="col-sm-12">  
+                    {Form ? (
+                        <>
+                            <h1>Ваше сообщение<br/>успешно отправлено</h1>  
+                            <button className="exit" onClick={handleExit}>Закрыть</button>                      
+                        </>
+                    ) : (
+                        <>
+                            <h2>Обратная связь</h2>
+                            <p>Вы можете поделиться с нами<br/>предложениями и пожеланиями</p>
+                            <form onSubmit={handleSubmit}>
+                                <div className="name">
+                                    <img src={userSvg} alt="#" style={{ opacity: formData.name ? 1 : 0.4 }}/>
+                                    <input 
+                                        type="text" 
+                                        placeholder="Имя" 
+                                        value={formData.name}
+                                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                    />
+                                </div>
+                                <div className="email">
+                                    <img src={emaliSvg} alt="#" style={{ opacity: formData.email ? 1 : 0.4 }}/>
+                                    <input 
+                                        type="email" 
+                                        placeholder="Электронная почта" 
+                                        value={formData.email}
+                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                    />
+                                </div>
+                                <div className="text">
+                                    <img src={textSvg} alt="#" style={{ opacity: formData.message ? 1 : 0.4 }}/>
+                                    <textarea
+                                        ref={textareaRef}
+                                        onInput={(e) => {
+                                            setFormData({ ...formData, message: e.target.value });
+                                            handleInput();
+                                        }}
+                                        placeholder="Ваш текст"
+                                        value={formData.message}
+                                    />
+                                </div>
+                                <button style={{ opacity: isFormValid ? 1 : 0.4 }} disabled={!isFormValid}>
+                                    отправить
+                                </button>
+                            </form>                            
+                        </>
+                    )}
                 </div>
             </div>
         </div>

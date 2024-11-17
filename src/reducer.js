@@ -4,32 +4,33 @@ const initialState = {
     type: '',
     pop_up: false,
     value: 1,
-    dataList_1: {
-        first: {
-            data: '123456', 
+    form: false,
+    dataList_1: [
+        {
+            date: '123456', 
             header1: '123456', 
             text1: '123456', 
             header2: '123456', 
             text2: '123456',
             img: '...'
         },
-        second: {
-            data: '123456', 
+        {
+            date: '123456', 
             header1: '123456', 
             text1: '123456', 
             header2: '123456', 
             text2: '123456',
             img: '...'
         },
-        third: {
-            data: '123456', 
+        {
+            date: '123456', 
             header1: '123456', 
             text1: '123456', 
             header2: '123456', 
             text2: '123456',
             img: '...'
         }
-    }
+    ]
 };
 
 const RootReducer = createReducer(initialState, builder => {
@@ -45,6 +46,38 @@ const RootReducer = createReducer(initialState, builder => {
     })
     .addCase('TOGGLEPOPUP', (state) => {
         state.pop_up = !state.pop_up;
+    })
+    .addCase('SEND_FORM_SUCCESS', (state) => { 
+        state.form = true;
+    })
+    .addCase('RESETFORM', (state) => {
+        state.form = !state.form;        
+    })
+    .addCase('FETCH_DATA_SUCCESS', (state, action) => {
+        switch (state.value){
+            case 1:
+                state.dataList_1 = action.payload;
+                break;
+
+            case 2:
+                state.dataList_2 = action.payload;
+                break;
+
+            case 3:
+                state.dataList_3 = action.payload;
+                break;
+
+            case 4:
+                state.dataList_4 = action.payload;
+                break;
+
+            case 5:
+                state.dataList_5 = action.payload;
+                break;
+
+            default:
+                break;
+        }
     })
 });
 

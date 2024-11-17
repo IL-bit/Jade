@@ -7,6 +7,9 @@ const Razvod = () => {
     const handleClick = (route) => {
       navigate(route);
     };
+    const botClick = () => {
+        window.location.href = 'http://t.me/JadeSmoke_bot';
+    }
     return(
         <div className="container-fluid">
             <div className="row" id="razvod">
@@ -16,7 +19,7 @@ const Razvod = () => {
                         <h3>выигрывай</h3>
                         <h2>призы</h2>
                     </div>
-                    <button className="tg">Перейти в Telegramm-Bot</button>
+                    <button className="tg" onClick={() => botClick()}>Перейти в Telegramm-Bot</button>
                     <button className="site" onClick={() => handleClick('/discl')}>перейти на сайт</button>
                 </div>
             </div>

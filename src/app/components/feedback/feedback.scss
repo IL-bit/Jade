@@ -1,4 +1,31 @@
 #feedback {
+    .exit {
+        width: 197px;
+        height: 62px;
+        border: none;
+        border-radius: 100px;
+        background-color: #3A8DDE;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 38px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h1 {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 28x;
+        line-height: 120%;
+        text-align: center;
+        color: #3A8DDE;
+        margin-top: 254px;
+    }
     h2 {
         font-family: 'Proxima Nova Rg';
         font-weight: 400;
