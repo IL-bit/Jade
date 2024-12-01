@@ -26,7 +26,7 @@ export const SENDFORM = (formData) => async (dispatch) => {
 
 export const FETCHDATAREQUEST = (offset) => async (dispatch) => {
     try {
-        const response = await fetch(`&{get_journal}/${offset}`, {
+        const response = await fetch(`${get_journal}/${offset}`, {
             method: 'GET',
             mode: 'cors',
             headers: {
