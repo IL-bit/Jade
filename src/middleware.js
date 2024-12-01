@@ -1,8 +1,10 @@
 const url = 'https://testebots.ru/api/v1';
+const get_journal = `${url}/journal/`;
+const send_form = `${url}/callback`;
 
 export const SENDFORM = (formData) => async (dispatch) => { 
     try {
-        const response = await fetch(`${url}/callback`, {
+        const response = await fetch(send_form, {
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -24,7 +26,7 @@ export const SENDFORM = (formData) => async (dispatch) => {
 
 export const FETCHDATAREQUEST = (offset) => async (dispatch) => {
     try {
-        const response = await fetch(`${url}/journal/${offset}`, {
+        const response = await fetch(`&{get_journal}/${offset}`, {
             method: 'GET',
             mode: 'cors',
             headers: {
