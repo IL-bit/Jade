@@ -11,14 +11,12 @@ export const SENDFORM = (formData) => async (dispatch) => {
             body: JSON.stringify(formData),
         });
         if (!response.ok) {
-            dispatch({ type: 'SEND_FORM_SUCCESS'});
             console.error('Fetch failed with status:', response.status); 
             return;
         }
         const data = await response.json();
         dispatch({ type: 'SEND_FORM_SUCCESS', payload: data}); 
-    } catch (error) {
-        dispatch({ type: 'SEND_FORM_SUCCESS'});        
+    } catch (error) {       
         console.error("Error occurred:", error); 
 
     }
