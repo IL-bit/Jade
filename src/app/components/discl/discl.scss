@@ -1,0 +1,66 @@
+@import url(../fonts/style.css);
+
+#discl {
+    background: url(../img/discl_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    h2 {
+        width: 345px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 132%;
+        color: #00358F;
+        text-align: center;
+        position: absolute;
+        bottom: 229px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    p {
+        width: 339px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 132%;
+        color: #00358F;
+        text-align: center;
+        position: absolute;
+        bottom: 141px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .buttons {
+        width: 343px;
+        height: 43px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 62px;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+            width: 167.5px;
+            height: 43px;
+            border: none;
+            border-radius: 100px;
+            font-family: 'Proxima Nova Rg';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        :nth-child(1) {
+            background-color: #fff;
+            color: #00358F;
+        }
+        :nth-child(2) {
+            background-color: #3A8DDE;
+        }
+    }
+}

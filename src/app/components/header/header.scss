@@ -1,0 +1,32 @@
+#header {
+    box-shadow: 0px 4px 32px rgba(3, 34, 129, 0.25);    
+    .col-sm-12 {
+        position: relative;
+        height: 56px;
+        img {
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .burger {
+            border: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left: auto;
+            width: 36px;
+            height: 36px;
+            top: 10px;
+            right: 11px;
+        }        
+    }
+
+}
+.bg2 {
+    background: url(../img/burger2.svg);
+}
+.bg1 {
+    background: url(../img/burger.svg);
+}

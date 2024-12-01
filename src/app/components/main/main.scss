@@ -1,0 +1,150 @@
+@import url(../fonts/style.css);
+
+#main {
+    height: 1356px;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/main_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    #first {
+        .slogan {
+            width: 281.69px;
+            height: 231.84px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 18px;
+            h1, h2, h3 {
+                font-family: 'Gloria script';
+                font-weight: 400;
+                color: #fff;
+                position: absolute;
+            }
+            h1 {
+                font-size: 150px;
+                line-height: 100%;
+                top: 0;
+                left: 0;
+                text-shadow: 1.67px 2.51px 0px #0d85c9;
+            }
+            h2 {
+                font-size: 120px;
+                line-height: 100%;
+                bottom: 0;
+                right: 42px;
+                left: auto;
+                top: auto;
+                text-shadow: 1.69px 2.54px 0px #0d85c9;
+            }
+            h3 {
+                font-size: 68px;
+                line-height: 108%;
+                right: 0;
+                left: auto;
+                top: 96px;
+                text-shadow: 1.47px 1.95px 0px #0d85c9;
+            }
+        }
+        .begin {
+            width: 237px;
+            height: 62px;
+            border: none;
+            border-radius: 100px;
+            background-color: #3A8DDE;
+            font-family: 'Proxima Nova Rg';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            display: block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 259px;
+        }
+        .down {
+            width: 24.07px;
+            height: 12.03px;
+            border: none;
+            background: none;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 57px;
+            padding: 0;
+            img {
+                width: 24.07px;
+                height: 12.03px;
+            }
+        }
+    }
+    #second {
+        margin-top: 71px;
+        .txt {
+            width: 345px;
+            height: 183px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            h2, h3 {
+                font-family: 'Gloria script';
+                font-weight: 400;
+                color: #fff;
+                position: absolute;
+            }
+            h3 {
+                top: 0;
+                right: 0;
+                left: auto;
+                font-size: 80px;
+                line-height: 50%;
+                text-shadow: 1.47px 1.95px 0px #0d85c9;
+            }
+            h2 {
+                bottom: 54px;
+                top: auto;
+                right: 16px;
+                font-size: 130px;
+                line-height: 50%;
+                text-shadow: 1.69px 2.54px 0px #0d85c9;
+            }
+            p {
+                width: 336px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: 'Proxima Nova Rg';
+                font-weight: 400;
+                color: #00358F;
+                font-size: 24px;
+                line-height: 150%;
+            }
+        }
+        img {
+            position: relative;
+            left: 50%;
+            transform: translateX(-46%);
+            margin-top: -60px;
+        }
+        button {
+            width: 252px;
+            height: 62px;
+            border: none;
+            border-radius: 100px;
+            background-color: #EB80A8;
+            font-family: 'Proxima Nova Rg';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
