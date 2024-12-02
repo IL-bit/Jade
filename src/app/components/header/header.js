@@ -10,12 +10,15 @@ const Header = () => {
 
     const handleToggle = () => {
         dispatch(togglePopup());
+    };    
+const handleClick = (route) => {
+      navigate(route);
     };
     return (
         <>
             <div className="row" id="header">
                 <div className="col-sm-12">
-                    <img src={logoSvg} alt="Jade" />
+                    <img src={logoSvg} alt="Jade" onClick={() => handleClick('/main')} />
                     <button className={`burger ${isOpen ? 'bg2' : 'bg1'}`} onClick={handleToggle}></button>
                 </div>
             </div>
