@@ -1,5 +1,5 @@
 const url = 'https://testebots.ru';
-const get_journal = `${url}/api/v1/journal/`;
+const get_journal = `${url}/api/v1/journal`;
 const send_form = `${url}/api/v1/callback`;
 
 export const SENDFORM = (formData) => async (dispatch) => { 
