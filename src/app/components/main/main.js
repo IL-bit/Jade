@@ -17,7 +17,7 @@ const Main = () => {
         navigate(route);
     };
     const gameClick = () => {
-        window.location.href = 'https://jade-app.vercel.app/';
+        window.location.href = process.env.REACT_APP_GAME;
     }
     useEffect(() => {
         window.scrollTo(0, 0);

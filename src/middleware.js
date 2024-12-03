@@ -1,8 +1,9 @@
-const url = 'https://testebots.ru/api/v1';
-
+const url = process.env.REACT_APP_URL;
+const sendForm = `${url}/api/v1/callback`;
+const getJournal = `${url}/api/v1/journal`;
 export const SENDFORM = (formData) => async (dispatch) => { 
     try {
-        const response = await fetch(`${url}/callback`, {
+        const response = await fetch(sendForm, {
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -11,22 +12,19 @@ export const SENDFORM = (formData) => async (dispatch) => {
             body: JSON.stringify(formData),
         });
         if (!response.ok) {
-            dispatch({ type: 'SEND_FORM_SUCCESS'});
             console.error('Fetch failed with status:', response.status); 
             return;
         }
         const data = await response.json();
         dispatch({ type: 'SEND_FORM_SUCCESS', payload: data}); 
-    } catch (error) {
-        dispatch({ type: 'SEND_FORM_SUCCESS'});        
+    } catch (error) {       
         console.error("Error occurred:", error); 
-
     }
 };
 
 export const FETCHDATAREQUEST = (offset) => async (dispatch) => {
     try {
-        const response = await fetch(`${url}/journal/${offset}`, {
+        const response = await fetch(`${getJournal}/${offset}`, {
             method: 'GET',
             mode: 'cors',
             headers: {

@@ -18,7 +18,7 @@ const Menu = () => {
       dispatch(togglePopup());
     };
     const gameClick = () => {
-        window.location.href = 'https://jade-app.vercel.app/';
+        window.location.href = process.env.REACT_APP_GAME;
     }
     return(
         <div className={`row ${isOpen ? 'show' : 'hide'}`} id="menu">
